@@ -1,9 +1,13 @@
 import React from 'react';
 import Button from '../components/common/Button';
+import Header from '../components/layout/Header';
 
 const About: React.FC = () => {
     return (
         <div style={{ padding: '16px', textAlign: 'center' }}>
+             
+      <Header />
+      
             <h1>About Us</h1>
             <p>This page demonstrates the reusable Button component.</p>
 
@@ -18,6 +22,7 @@ const About: React.FC = () => {
                     Large Button
                 </Button>
             </div>
+           
         </div>
     );
 };

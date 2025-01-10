@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Card from '@/components/common/Card';
 import PostModal from '@/components/common/PostModal';
+import Header from '@/components/layout/Header';
+
 
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,7 +16,12 @@ const Home: React.FC = () => {
     };
 
     return (
+        
+        
         <div style={{ padding: '16px' }}>
+
+      <Header />
+      
             <button
                 onClick={() => setIsModalOpen(true)}
                 style={{
@@ -46,7 +53,10 @@ const Home: React.FC = () => {
                     <Card key={index} title={post.title} content={post.content} />
                 ))}
             </div>
+            
+            
         </div>
+        
     );
 };
 

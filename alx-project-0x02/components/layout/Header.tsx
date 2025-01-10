@@ -3,11 +3,17 @@ import Link from 'next/link';
 
 const Header: React.FC = () => {
     return (
-        <header style={{ display: 'flex', gap: '10px', padding: '10px' }}>
-            <h1>ALX Project</h1>
-            <nav>
-                <Link href="/home">Home</Link>
-                <Link href="/about">About</Link>
+        <header className="bg-gray-800 text-white p-4">
+            <nav className="flex justify-center gap-4">
+                <Link href="/home" className="hover:underline">
+                    Home
+                </Link>
+                <Link href="/about" className="hover:underline">
+                    About
+                </Link>
+                <Link href="/posts" className="hover:underline">
+                    Posts
+                </Link>
             </nav>
         </header>
     );
